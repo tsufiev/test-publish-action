@@ -6,4 +6,5 @@ function main() {
 // one
 // two
 // three
+// four
 main()
