@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 2.2.0 (2021-11-19)
+
+
+### Features
+
+* remove old env vars ([8f3bddb](https://github.com/tsufiev/test-publish-action/commit/8f3bddb8ae67dbe3b649eae23fb09af614b8250d))
+
 ### 2.1.2 (2021-11-19)
 
 
