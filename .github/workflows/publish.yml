@@ -1,0 +1,3 @@
+- name: npm version and publish
+  uses: geemanjs/conventional-changelog-npm-publish@1.0.0
+
