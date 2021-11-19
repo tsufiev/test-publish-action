@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 2.1.2 (2021-11-19)
+
+
+### Bug Fixes
+
+* set up git user name and email, part 2 ([7f395ec](https://github.com/tsufiev/test-publish-action/commit/7f395ece85076a513fcd0be43a20bbe4dfb8ff4b))
+
 ## [2.1.0](https://github.com/tsufiev/test-publish-action/compare/v2.0.0...v2.1.0) (2021-11-19)
 
 
