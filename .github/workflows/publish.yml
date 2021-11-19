@@ -14,3 +14,5 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: npm version and publish
         uses: geemanjs/conventional-changelog-npm-publish@1.0.0
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
