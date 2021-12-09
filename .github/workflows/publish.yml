@@ -9,21 +9,28 @@ jobs:
     if: "!contains(github.event.head_commit.author.name, 'Yandex Cloud Bot')"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 14
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm test
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
         with:
           token: ${{ secrets.BOT_TOKEN }}
           release-type: node
           package-name: test-publish-action
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.BOT_TOKEN }}
+        if: ${{ steps.release.outputs.release_created }}
       - run: |
           git config --global user.email "yandex-cloud-bot@yandex-team.ru"
           git config --global user.name "Yandex Cloud Bot"
+        if: ${{ steps.release.outputs.release_created }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: 'https://registry.npmjs.org'
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm ci
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm test
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish
         env:
