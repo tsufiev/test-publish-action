@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.4.2](https://www.github.com/tsufiev/test-publish-action/compare/v2.4.1...v2.4.2) (2021-12-09)
+
+
+### Bug Fixes
+
+* another workflow fix ([3b04754](https://www.github.com/tsufiev/test-publish-action/commit/3b047547f19bfaa651e37ccbe3f04a96d5e7809b))
+
 ### [2.4.1](https://www.github.com/tsufiev/test-publish-action/compare/v2.4.0...v2.4.1) (2021-12-09)
 
 
