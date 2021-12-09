@@ -1,30 +1,31 @@
-name: Generate Changelog, bump version and publish
-
 on:
   push:
     branches: [master]
 
+name: release-please
+
 jobs:
-  publish:
+  release-please:
     if: "!contains(github.event.head_commit.author.name, 'Yandex Cloud Bot')"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
         with:
-          fetch-depth: 0
-          token: ${{ secrets.BOT_TOKEN }}
-      - run: |
-          git config --global user.email "yandex-cloud-bot@yandex-team.ru"
-          git config --global user.name "Yandex Cloud Bot"
-      # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14.x'
+          node-version: 14
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
       - run: npm test
-      - run: npm run release
-      - run: git push --follow-tags origin master
+      - uses: GoogleCloudPlatform/release-please-action@v2
+        id: release
+        with:
+          token: ${{ secrets.BOT_TOKEN }}
+          release-type: node
+          package-name: test-publish-action
+      - run: |
+          git config --global user.email "yandex-cloud-bot@yandex-team.ru"
+          git config --global user.name "Yandex Cloud Bot"
+        if: ${{ steps.release.outputs.release_created }}
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        if: ${{ steps.release.outputs.release_created }}
