@@ -5,6 +5,5 @@ function main() {
 // more!
 // one
 // two
-// three
-// four
+
 main()
