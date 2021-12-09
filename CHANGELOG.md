@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.4.1](https://www.github.com/tsufiev/test-publish-action/compare/v2.4.0...v2.4.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* correctly publish to npm ([960a013](https://www.github.com/tsufiev/test-publish-action/commit/960a0136eef10062d3a49d81528f227c16dac42b))
+
 ## [2.4.0](https://www.github.com/tsufiev/test-publish-action/compare/v2.3.0...v2.4.0) (2021-12-09)
 
 
