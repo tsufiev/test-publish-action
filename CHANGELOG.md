@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://www.github.com/tsufiev/test-publish-action/compare/v2.2.1...v2.3.0) (2021-12-09)
+
+
+### Features
+
+* switch to Google's release-please action ([6f65e62](https://www.github.com/tsufiev/test-publish-action/commit/6f65e62d3b87b88e46fdb9d023ae8b5d6995c6df))
+
 ### [2.2.1](https://github.com/tsufiev/test-publish-action/compare/v2.2.0...v2.2.1) (2021-12-09)
 
 
