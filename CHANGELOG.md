@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 * another change ([ae7d6ba](https://www.github.com/tsufiev/test-publish-action/commit/ae7d6ba5b31836720feaadf82793ea24e3b9acac))
 * small change ([35f5f60](https://www.github.com/tsufiev/test-publish-action/commit/35f5f60dfdb48020468cbf4a33e91bad46e66d74))
+* just a small clarification
 
 ## [2.3.0](https://www.github.com/tsufiev/test-publish-action/compare/v2.2.1...v2.3.0) (2021-12-09)
 
