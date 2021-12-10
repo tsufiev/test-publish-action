@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.4.3](https://www.github.com/tsufiev/test-publish-action/compare/v2.4.2...v2.4.3) (2021-12-10)
+
+
+### Bug Fixes
+
+* correct workflow ([a95107a](https://www.github.com/tsufiev/test-publish-action/commit/a95107a4df8cde8efe39c2bbadfe3edbc9117b1d))
+* remove redundant if from release-please step ([afb4b79](https://www.github.com/tsufiev/test-publish-action/commit/afb4b797426a0533206b9d11e248b7c3e0e9cfb2))
+* Revert "Update publish.yml" ([e76874a](https://www.github.com/tsufiev/test-publish-action/commit/e76874a788295a4910c80b2ca902a8c32c9a87a0))
+
 ### [2.4.2](https://www.github.com/tsufiev/test-publish-action/compare/v2.4.1...v2.4.2) (2021-12-09)
 
 
