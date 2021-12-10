@@ -13,4 +13,3 @@ jobs:
           github-token: ${{ secrets.BOT_TOKEN }}
           npm-token: ${{ secrets.NODE_AUTH_TOKEN }}
           node-version: 14
-          run-tests: false
