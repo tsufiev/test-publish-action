@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://www.github.com/tsufiev/test-publish-action/compare/v2.4.3...v2.5.0) (2021-12-10)
+
+
+### Features
+
+* use the shared release workflow ([b0aa05e](https://www.github.com/tsufiev/test-publish-action/commit/b0aa05e1a33795562da151d9a1240b5a8158867c))
+
 ### [2.4.3](https://www.github.com/tsufiev/test-publish-action/compare/v2.4.2...v2.4.3) (2021-12-10)
 
 
