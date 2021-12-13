@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: tsufiev/test-release-action@master
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.YC_UI_BOT_GITHUB_TOKEN }}
           npm-token: ${{ secrets.NPM_TOKEN }}
           node-version: 14
