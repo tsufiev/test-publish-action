@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.6.1](https://www.github.com/tsufiev/test-publish-action/compare/v2.6.0...v2.6.1) (2021-12-16)
+
+
+### Miscellaneous
+
+* update deps ([7bdce51](https://www.github.com/tsufiev/test-publish-action/commit/7bdce51dec0f2507385149d74d6eaaff855769c1))
+
 ## [2.6.0](https://www.github.com/tsufiev/test-publish-action/compare/v2.5.1...v2.6.0) (2021-12-13)
 
 
